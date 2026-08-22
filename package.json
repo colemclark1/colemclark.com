@@ -2,43 +2,23 @@
   "name": "personal-website-april-2019",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://colemclark.com",
+  "homepage": "https://colemclark.com",
   "dependencies": {
-    "bootstrap": "^5.0.0",
-    "dotenv": "^16.3.1",
-    "npm": "^10.1.0",
-    "react": "^16.8.6",
-    "react-bootstrap": "^2.0.0",
-    "react-dom": "^16.8.6",
-    "react-icons": "^4.3.1",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "^5.0.1",
-    "styled-components": "^5.3.3"
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-icons": "^5.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "@vitejs/plugin-react": "^6.1.0",
+    "gh-pages": "^6.3.0",
+    "vite": "^8.2.2"
   }
 }
